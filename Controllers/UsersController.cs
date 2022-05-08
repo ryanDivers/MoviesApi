@@ -85,6 +85,11 @@ namespace MoviesApi.Controllers
                 return BadRequest();
             }
 
+            if(user.password.Length < 8)
+            {
+                return BadRequest();
+            }
+
             _context.User.Add(user);
             await _context.SaveChangesAsync();
 
