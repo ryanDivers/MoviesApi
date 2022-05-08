@@ -123,6 +123,8 @@ namespace MoviesApi.Controllers
                 return NotFound();
             }
 
+
+
             if(user.password == password)
             {
                 return "Login successful";
