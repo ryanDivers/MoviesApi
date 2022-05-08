@@ -114,6 +114,7 @@ namespace MoviesApi.Controllers
 
             if (user == null)
             {
+
                 return NotFound();
             }
 
